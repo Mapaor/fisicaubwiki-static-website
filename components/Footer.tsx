@@ -19,7 +19,7 @@ import styles from './styles.module.css'
 export function FooterImpl() {
   const [hasMounted, setHasMounted] = React.useState(false)
   const { isDarkMode, toggleDarkMode } = useDarkMode()
-  const currentYear = new Date().getFullYear()
+  // const currentYear = new Date().getFullYear()
 
   const onToggleDarkMode = React.useCallback(
     (e) => {
@@ -35,9 +35,10 @@ export function FooterImpl() {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>
+{/*       <div className={styles.copyright}>
         Copyright {currentYear} {config.author}
-      </div>
+      </div> */}
+            <div className={styles.copyright}>Web generada mitjançant <u style={{color:'rgb(51, 126, 169)'}}><a href="https://github.com/NotionX/react-notion-x">react-notion-x</a></u>.<br />Original: <u style={{color:'rgb(51, 126, 169)'}}><a href="https://fisicaubwiki.notion.site">fisicaubwiki.notion.site</a></u>.</div>
 
       <div className={styles.settings}>
         {hasMounted && (
