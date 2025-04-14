@@ -7,6 +7,27 @@
  * places to add some flare.
  */
 
+/* AFEGITS NOUS */
+.notion-equation-block {
+  padding: 14px, 0;
+}
+
+/* ES POT CANVIAR AIXÒ SI ES VOL MODIFICAR EL COLOR DE FONS 
+.notion-frame {
+    background-color: rgb(245, 245, 230, 0.4); 
+    background-size: cover;
+} 
+  /* però malauradament el dark-mode no queda ben configurat. */
+*/
+
+
+/* CANVIATS */
+.notion-hr {
+  margin: 1px, 0;
+}
+
+/* VENIEN AMB EL KIT D'EN TRAVIS FISCHER */
+
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
@@ -137,9 +158,9 @@
   margin: 0.75em 0;
 }
 
-.notion-hr {
+/* .notion-hr {
   margin: 2em 0;
-}
+} */
 
 @media only screen and (max-width: 920px) {
   .index-page.notion-page {
