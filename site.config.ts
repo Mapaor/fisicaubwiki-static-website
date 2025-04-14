@@ -9,17 +9,17 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Física UB Website',
+  domain: 'static-website',
+  author: 'Martí',
 
   // open graph metadata (optional)
   description: 'Example Next.js Notion Starter Kit Site',
 
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  twitter: '',
+  github: 'Mapaor/fisicaubwiki-static-website',
+  linkedin: '',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
@@ -50,16 +50,22 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'Visita guiada',
+      pageId: '11e11a9761ab80019a26f86ed9affee8'
+    },
+    {
+      title: 'Sobre aquesta web (FAQs)',
+      pageId: 'c75f119688344c02b2fa3a9b96281075'
+    }
+    // ,
+    // {
+    //   title: 'Contacte',
+    //   pageId: 'c75f119688344c02b2fa3a9b96281075#56ec1f2063dc4cf18eeef0ea102d9812'
+    // }
+  ]
 })
